@@ -1,0 +1,159 @@
+/* ! Resetting */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ! General Adjustments start */
+body {
+    background-color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.column-100 {
+    width: 100%;
+}
+
+.column-75 {
+    width: 75%;
+}
+
+.column-50 {
+    width: 50%;
+}
+
+.column-25 {
+    width: 25%;
+}
+
+.column-100,
+.column-75,
+.column-50,
+.column-25 {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    display: flex;
+    position: relative;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+/* ! General Adjustments end */
+
+/* ! Head Display start */
+.main {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.main h1 {
+    margin-bottom: 20px;
+}
+
+span {
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: blueviolet;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.info-text {
+    margin-bottom: 20px;
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-brands {
+    margin-inline: 15px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.fa-brands:hover {
+    color: rgb(88, 186, 247);
+}
+/* ! Head display end */
+
+/* ! Main display start */
+.container {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    background-color: white;
+    padding: 80px;
+    margin: 55px auto;
+}
+
+.container h2 {
+    margin-top: 30px;
+}
+
+.container label {
+    font-size: 20px;
+}
+
+.container select {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.btn-calc {
+    position: absolute;
+    top: 38%;
+}
+
+.input-text {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+/* ! Main display end */
